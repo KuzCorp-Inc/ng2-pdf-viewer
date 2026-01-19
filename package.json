@@ -1,7 +1,7 @@
 {
-  "name": "ng2-pdf-viewer",
-  "version": "10.4.0",
-  "description": "Angular 5+ component for rendering PDF",
+  "name": "@kuzcorp/ng2-pdf-viewer-kuzcorp",
+  "version": "1.0.0",
+  "description": "Forked ng2-pdf-viewer for KuzCorp with pdfjs-dist version 5.4.0 support",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
