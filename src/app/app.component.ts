@@ -41,6 +41,14 @@ export class AppComponent implements OnInit {
   @ViewChild(PdfViewerComponent)
   private pdfComponent!: PdfViewerComponent;
 
+
+  constructor() {
+    //For testing custom paths to pdf worker and wasm folder
+    //set them here
+    //(window as any).pdfWorkerSrc = '/pdf.worker.js';
+    //(window as any).wasmUrl = '/wasm/';
+  }
+
   ngOnInit() {
     if (window.screen.width <= 768) {
       this.mobile = true;
@@ -69,6 +77,13 @@ export class AppComponent implements OnInit {
    */
   setCustomWorkerPath() {
     (window as any).pdfWorkerSrc = '/lib/pdfjs-dist/build/pdf.worker.js';
+  }
+
+  /**
+   * Set custom path to wasm folder
+   */
+  setCustomWasmPath() {
+    (window as any).wasmUrl = '/lib/pdfjs-dist/wasm/';
   }
 
   incrementPage(amount: number) {

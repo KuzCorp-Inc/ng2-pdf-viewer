@@ -256,7 +256,7 @@ export class PdfViewerComponent
       pdfWorkerSrc = (window as any).pdfWorkerSrc;
     } else {
       pdfWorkerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfJsVersion
-        }/legacy/build/pdf.worker.min.mjs`;
+      }/legacy/build/pdf.worker.min.mjs`;
     }
 
     assign(GlobalWorkerOptions, 'workerSrc', pdfWorkerSrc);
@@ -483,12 +483,22 @@ export class PdfViewerComponent
     if (!this._cMapsUrl) {
       return this.src;
     }
-
+   
     const params: any = {
       cMapUrl: this._cMapsUrl,
       cMapPacked: true,
       enableXfa: true,
     };
+
+    const pdfJsVersion: string = (PDFJS as any).version;
+    if ((window as any).wasmUrl) {
+      params.wasmUrl = (window as any).wasmUrl;
+    }
+    else{
+      params.wasmUrl = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfJsVersion
+      }/wasm/`;
+    }
+    
     params.isEvalSupported = false; // http://cve.org/CVERecord?id=CVE-2024-4367
 
     if (srcType === 'string') {

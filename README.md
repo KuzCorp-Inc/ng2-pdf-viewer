@@ -515,6 +515,10 @@ In your code update `path` to the worker to be for example `/pdf.worker.mjs`
 ```typescript
 (window as any).pdfWorkerSrc = '/pdf.worker.mjs';
 ```
+If you are rendering JPEG2000 images, update `path` to the wasmUrl to be for example `/wasm/`
+```typescript
+(window as any).wasmUrl = '/wasm/';
+```
 
 *This should be set before `pdf-viewer` component is rendered.*
 
