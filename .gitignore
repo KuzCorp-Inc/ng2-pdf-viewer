@@ -40,3 +40,25 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# NPM
+.npm/
+.npmrc.local
+*.tgz
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Package publishing
+dist/ng2-pdf-viewer-kuzcorp/
+*.local
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Angular
+.angular/
