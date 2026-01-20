@@ -1,6 +1,6 @@
 {
   "name": "@kuzcorp/ng2-pdf-viewer-kuzcorp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Forked ng2-pdf-viewer for KuzCorp with pdfjs-dist version 5.4.0 support",
   "keywords": [
     "angular",
@@ -17,12 +17,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kuzcorp/ng2-pdf-viewer-kuzcorp.git"
+    "url": "git+https://github.com/KuzCorp-Inc/ng2-pdf-viewer.git"
   },
   "bugs": {
-    "url": "https://github.com/kuzcorp/ng2-pdf-viewer-kuzcorp/issues"
+    "url": "https://github.com/KuzCorp-Inc/ng2-pdf-viewer/issues"
   },
-  "homepage": "https://github.com/kuzcorp/ng2-pdf-viewer-kuzcorp#readme",
+  "homepage": "https://github.com/KuzCorp-Inc/ng2-pdf-viewer#readme",
   "peerDependencies": {
     "@angular/common": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
     "@angular/core": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
